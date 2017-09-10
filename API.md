@@ -72,6 +72,6 @@ http --json POST http://localhost:7500/api/sites name='Яндекс' url='https:
 `PATCH` запрос по адресу **/api/sites/59b551bb6501740a2112bd1d**:
 
 ```bash
-http --json POST http://localhost:7500/api/sites/59b551bb6501740a2112bd1d \
+http --json PATCH http://localhost:7500/api/sites/59b551bb6501740a2112bd1d \
   questions:="['Вам понравился наш сайт?', 'Вы придёте к нам ещё?']"
 ```
