@@ -15,3 +15,5 @@
 ## Run
 
     python run.py
+
+[Docs](API.md)
