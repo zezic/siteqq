@@ -8,6 +8,10 @@
     source .venv/bin/activate
     pip install flask flask-restful flask-mongoengine marshmallow-mongoengine
 
+## Configure
+
+    cp config.py.example instance/config.py
+
 ## Run
 
     python3 run.py

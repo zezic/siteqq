@@ -1,3 +1,6 @@
 MONGODB_SETTINGS = {
     'db': 'siteqq'
 }
+DEBUG = True
+PORT = 7500
+HOST = '0.0.0.0'
