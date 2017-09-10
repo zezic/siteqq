@@ -24,8 +24,11 @@ class SiteAPI(Resource):
 
     def patch(self, site_id):
         data = request.get_json()
+        schema = SiteSchema()
+        loaded = schema.load(data).data
         site = Site.objects.get(id=site_id)
-        for field in data:
+        for field in loaded:
+            print(field)
             setattr(site, field, data.get(field))
         site.save()
         return {}
